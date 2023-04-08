@@ -16,18 +16,10 @@ const Main = () => {
                 <h2>shower part</h2>
                 {
                     contents.map(content => <Content
+                        key={content.id}
                         content={content}
                     ></Content>)
                 }
-                {/* <div className='content-container'>
-                    <div className='author-info'>
-                        <h2>authore</h2>
-                    </div>
-                    <div className='reader-discription'>
-                        <h1>readdd</h1>
-                    </div>
-
-                </div> */}
             </div>
             <div className='cart-container'>
                 <h2>show cart</h2>

@@ -3,6 +3,8 @@
         "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
         "title": "Importants of CSS for design a web site",
         "name": "Mubariz Mehdizadeh",
+        "date":"Apr 5(3 days ago)",
+        "time":4,
         "authorImg": "https://images.unsplash.com/profile-fb-1502703436-d3cf7768cf64.jpg?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff",
         "img": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
     },
@@ -10,6 +12,8 @@
         "id": "124e13b9-2d54-4b2f-a74d-a77b362d60d2",
         "title": "Importants of HTML for create a web site",
         "name": "Pablo Heimplatz",
+        "date":"Apr 7(1 days ago)",
+        "time":10,
         "authorImg": "https://images.unsplash.com/profile-1557568482234-4744c6b90987?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff",
         "img": "https://images.unsplash.com/photo-1632882765546-1ee75f53becb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
     },
@@ -17,6 +21,8 @@
         "id": "124e13b9-2d54-4b2f-a74d-a77b362d6663",
         "title": "Importants of javaScript for create a web site",
         "name": "Nathan Dumlao",
+        "date":"Apr 1(7 days ago)",
+        "time":7,
         "authorImg": "https://images.unsplash.com/profile-1495427732560-fe5248ad6638?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff",
         "img": "https://images.unsplash.com/photo-1472437774355-71ab6752b434?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
     },
@@ -24,6 +30,8 @@
         "id": "124e13b9-2d54-4b2f-a74d-a77b362d6do02",
         "title": "Importants of React for create a standable web site",
         "name": "Daniel Lincoln",
+        "date":"Apr 4(4 days ago)",
+        "time":5,
         "authorImg": "https://images.unsplash.com/profile-fb-1522857800-5763b6c50a98.jpg?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff",
         "img": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
     }
