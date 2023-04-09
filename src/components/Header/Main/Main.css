@@ -1,6 +1,6 @@
 .main-container{
     margin: 0px 120px 30px 120px;
-    border: 1px solid rgba(17, 17, 17, 0.15);
+    /* border: 1px solid rgba(17, 17, 17, 0.15); */
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 30px;
@@ -10,10 +10,21 @@
 .content-container{
     display: flex;
     justify-content: space-between;
-   
+    
 }
 .cart-container{
     background: rgba(17, 17, 17, 0.05);
     border-radius: 8px;
-    padding: 30px;
+    /* padding: 30px; */
+    padding-left: 30px;
+}
+.showTitle{
+    background-color: white;
+    border-radius: 10px;
+    gap: 30px;
+}
+.showTitle p{
+    font-weight: bold;
+    
+    
 }

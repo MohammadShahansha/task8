@@ -5,37 +5,54 @@ import Content from '../../Content/Content';
 const Main = () => {
     // console.log(handleReadTime);
     const [contents, setContents] = useState([])
-    const [cart,setCart]=useState([])
-    const [readTime, setReadTime] = useState("")
-    
+    const [cart, setCart] = useState([])
+    const [readTime, setReadTime] = useState(0)
+    const [cartTitle, setCartTitle] = useState([])
+
     useEffect(() => {
         fetch('Product.json')
             .then(res => res.json())
             .then(data => setContents(data))
     }, [])
 
-    const handlerCart =(count) =>{
-        const newCart = [...cart,count];
+    // useEffect for spent time
+    useEffect(() => {
+        const getReadTime = localStorage.getItem("readTime")
+        setReadTime(getReadTime);
+    }, [])
+
+    useEffect(() => {
+        const getTitle = localStorage.getItem("")
+    },[])
+
+    // const handlerCart =(count) =>{
+    //     const newCart = [...cart,count];
+    //     setCart(newCart);
+    // }
+    const handlerCart = (count, title) => {
+        const newCart = [...cart, count];
+        const newTileCart = [...cartTitle, title];
         setCart(newCart);
+        setCartTitle(newTileCart);<br />
     }
-    const handleReadTime = (t) =>{
+
+    const handleReadTime = (t) => {
         const previousReadTime = JSON.parse(localStorage.getItem("readTime"));
         console.log(previousReadTime);
-        if(previousReadTime){
+        if (previousReadTime) {
             const sum = previousReadTime + t;
-            localStorage.setItem("readTime",sum);
+            localStorage.setItem("readTime", sum);
             setReadTime(sum);
         }
-        else{
-            localStorage.setItem("readTime",t);
+        else {
+            localStorage.setItem("readTime", t);
             setReadTime(t);
         }
-      }
-    
+    }
+
     return (
         <div className='main-container'>
             <div className='contents-container'>
-                <h2>shower part</h2>
                 {
                     contents.map(content => <Content
                         key={content.id}
@@ -46,10 +63,14 @@ const Main = () => {
                 }
             </div>
             <div className='cart-container'>
-                <h2>show cart</h2>
-                <h3 className='spent-time'>Spent time on read: <span>{readTime}</span> min</h3>
+                <h3 className='spent-time'>Spent time on  read: <span>{readTime}</span> min</h3>
                 <h3>Bookmarked Blogs : <span>{cart.length}</span></h3>
+                {/* <p className='showTitle'><span>{cartTitle}</span><br /></p> */}
+                <div className='showTitle'>
+                    <p> {cartTitle}</p>
+                </div>
             </div>
+            {/* <p className='showTitle'><span>{cartTitle}</span></p> */}
         </div>
     );
 };

@@ -20,13 +20,14 @@ const Content = (props) => {
                 </div>
                 <div className='read-discription'>
                     <p>{time} min read</p>
-                    <p onClick={() => handlerCart(props.count)}><FontAwesomeIcon icon={faBookmark} /></p>
+                    {/* <p onClick={() => handlerCart(props.count)}><FontAwesomeIcon icon={faBookmark} /></p> */}
+                    <p onClick={() => handlerCart(props.count,title)}><FontAwesomeIcon icon={faBookmark} /></p>
                 </div>
             </div>
             <div>
                 <h2>{title}</h2>
                 {/* <a onClick={() => handleReadTime (time)} href="">Mark as read</a> */}
-                <p className='markreed' onClick={() => handleReadTime (time)}>Mark as read</p>
+                <a className='markreed' onClick={() => handleReadTime (time)}>Mark as read</a>
                 
             </div>
         </div>
