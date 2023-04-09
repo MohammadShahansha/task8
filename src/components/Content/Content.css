@@ -2,6 +2,7 @@
     color: blue;
     border-bottom:2px solid blue;
     display: inline;
+     cursor: grab;
     /* margin-bottom: 20px; */
 }
 .product-container-for-main img{
@@ -37,5 +38,5 @@
 
 
 @media screen and (max-width: 575px){
-    
+
 }

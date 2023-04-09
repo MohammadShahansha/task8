@@ -1,0 +1,18 @@
+div div p{
+    margin: 0;
+}
+div div h3{
+    margin: 0;
+}
+div div h2{
+    margin: 0;
+}
+.blog-container{
+    margin: 30px 120px;
+}
+
+@media screen and (max-width: 575px){
+    .blog-container{
+        margin: 30px 0px;
+    }
+}
