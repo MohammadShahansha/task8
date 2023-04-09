@@ -6,7 +6,7 @@ const Main = () => {
     // console.log(handleReadTime);
     const [contents, setContents] = useState([])
     const [cart, setCart] = useState([])
-    const [readTime, setReadTime] = useState(0)
+    const [readTime, setReadTime] = useState([]);
     const [cartTitle, setCartTitle] = useState([])
 
     useEffect(() => {
@@ -21,14 +21,11 @@ const Main = () => {
         setReadTime(getReadTime);
     }, [])
 
-    useEffect(() => {
-        const getTitle = localStorage.getItem("")
-    },[])
+    // useEffect(() => {
+    //     const getReadTime = localStorage.getItem("readTime")
+    //     setReadTime(getReadTime);
+    //   }, [readTime])
 
-    // const handlerCart =(count) =>{
-    //     const newCart = [...cart,count];
-    //     setCart(newCart);
-    // }
     const handlerCart = (count, title) => {
         const newCart = [...cart, count];
         const newTileCart = [...cartTitle, title];
@@ -40,15 +37,15 @@ const Main = () => {
         const previousReadTime = JSON.parse(localStorage.getItem("readTime"));
         console.log(previousReadTime);
         if (previousReadTime) {
-            const sum = previousReadTime + t;
-            localStorage.setItem("readTime", sum);
-            setReadTime(sum);
+          const sum = previousReadTime + t;
+          localStorage.setItem("readTime", sum);
+          setReadTime(sum);
         }
         else {
-            localStorage.setItem("readTime", t);
-            setReadTime(t);
+          localStorage.setItem("readTime", t);
+          setReadTime(t);
         }
-    }
+      }
 
     return (
         <div className='main-container'>
