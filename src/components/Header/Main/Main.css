@@ -3,9 +3,17 @@
     border: 1px solid rgba(17, 17, 17, 0.15);
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 30px;
+   
 }
 
 .content-container{
     display: flex;
     justify-content: space-between;
+   
+}
+.cart-container{
+    background: rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    padding: 30px;
 }

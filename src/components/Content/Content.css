@@ -1,5 +1,7 @@
-.product-container-for-main{
-
+.product-container-for-main .markreed{
+    color: blue;
+    border-bottom:2px solid blue;
+    display: inline;
 }
 .product-container-for-main img{
     width: 100%;
