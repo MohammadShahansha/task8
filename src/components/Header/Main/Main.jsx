@@ -21,11 +21,6 @@ const Main = () => {
         setReadTime(getReadTime);
     }, [])
 
-    // useEffect(() => {
-    //     const getReadTime = localStorage.getItem("readTime")
-    //     setReadTime(getReadTime);
-    //   }, [readTime])
-
     const handlerCart = (count, title) => {
         const newCart = [...cart, count];
         const newTileCart = [...cartTitle, title];
@@ -62,12 +57,10 @@ const Main = () => {
             <div className='cart-container'>
                 <h3 className='spent-time'>Spent time on  read: <span>{readTime}</span> min</h3>
                 <h3>Bookmarked Blogs : <span>{cart.length}</span></h3>
-                {/* <p className='showTitle'><span>{cartTitle}</span><br /></p> */}
                 <div className='showTitle'>
                     <p> {cartTitle}</p>
                 </div>
             </div>
-            {/* <p className='showTitle'><span>{cartTitle}</span></p> */}
         </div>
     );
 };

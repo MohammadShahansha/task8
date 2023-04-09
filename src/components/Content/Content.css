@@ -3,7 +3,6 @@
     border-bottom:2px solid blue;
     display: inline;
      cursor: grab;
-    /* margin-bottom: 20px; */
 }
 .product-container-for-main img{
     width: 100%;
@@ -33,10 +32,4 @@
 }
 .formargin{
     margin-bottom: 30px;
-}
-
-
-
-@media screen and (max-width: 575px){
-
 }
